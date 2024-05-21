@@ -15,8 +15,18 @@
       <input type="text" name="angka2" id="angka2" v-model="inputAngkaDua" class="p-2 border border-gray-300 rounded-md">
     </div>
 
+    <div class="flex gap-2">
     <button @click="proses" class="px-4 py-2 bg-blue-500 text-white rounded-md">Hitung Penjumlahan</button>
-    <h3 class="mt-4">Hasil Penjumlahan = {{ hasil }}</h3>
+    <button @click="proses1" class="px-4 py-2 bg-orange-300 text-white rounded-md">Hitung Pengurangan</button>
+    <button @click="proses2" class="px-4 py-2 bg-blue-500 text-white rounded-md">Hitung Perkalian</button>
+    <button @click="proses3" class="px-4 py-2 bg-orange-500 text-white rounded-md">Hitung Pembagian</button>
+    </div>
+    
+    <div class="border-2 mt-4 p-2 rounded">
+    <h3>Hasil Operator =  {{  hasil }}</h3>
+    </div>
+
+
   </main>
 </template>
 
@@ -35,8 +45,21 @@ const tampilkanNama = () => {
 const inputAngkaSatu = ref('')
 const inputAngkaDua = ref('')
 const hasil = ref('')
+
 const proses = () => {
   hasil.value = parseInt(inputAngkaSatu.value) + parseInt(inputAngkaDua.value)
+}
+
+const proses1 = () => {
+  hasil.value = parseInt(inputAngkaSatu.value) - parseInt(inputAngkaDua.value)
+}
+
+const proses2 = () => {
+  hasil.value = parseInt(inputAngkaSatu.value) * parseInt(inputAngkaDua.value)
+}
+
+const proses3 = () => {
+  hasil.value = parseInt(inputAngkaSatu.value) / parseInt(inputAngkaDua.value)
 }
 
 onMounted(() => {

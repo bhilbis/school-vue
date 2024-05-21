@@ -1,19 +1,20 @@
 <template>
     <div>
-      <header class="py-2">
-        <div class="container mx-auto px-4">
-          <div class="header-text">
-            <p>Web Designer</p>
-            <h1>Hi, I,m <span>Flexsy</span><br />Bilbis From Indonesia</h1>
-          </div>
-        </div>
+      <header class="py-2 ">
+        
       </header>
   
       <!-- About -->
-      <section id="about" class="py-4 bg-gray-100">
+      <section id="about" class="py-4 mt-40 bg-gray-100">
         <div class="container mx-auto px-4">
           <h1 class="text-3xl font-bold text-center mb-4">About Me</h1>
-          <div class="flex border-b" role="tablist">
+          <div class="container mx-auto px-4 flex justify-center">
+          <div class="header-text text-center">
+            <p>Web Designer</p>
+            <h1>Hi, I,m <span>Flexsy</span> Bilbis From Indonesia</h1>
+          </div>
+        </div>
+          <div class="flex justify-center border-b" role="tablist">
             <button
               class="tab-link py-2 px-4 text-gray-600 hover:text-gray-800 focus:outline-none"
               @click="activeTab = 'skills'"
@@ -64,23 +65,23 @@
                 <p>Designing Web Interface</p>
               </div>
               <div class="grid-item h-40">
-                <h2 class="text-lg font-semibold">Coming soon</h2>
-                <p>Still Coming Soon</p>
+                <h2 class="text-lg font-semibold">Mobile Developer</h2>
+                <p>Create a mobile app</p>
               </div>
             </div>
           </div>
           <div v-if="activeTab === 'experience'" id="experience-panel" role="tabpanel" aria-labelledby="experience-tab" class="tab-content p-4">
             <div class="grid grid-cols-3 gap-4">
               <div class="grid-item w-64 h-40">
-                <h2 class="text-lg font-semibold">2022 - current</h2>
-                <p>Lorem ipsum dolor sit amet.</p>
+                <h2 class="text-lg font-semibold">2022 - now</h2>
+                <p>SMK N 1 Purwosari</p>
               </div>
               <div class="grid-item w-64 h-40">
                 <h2 class="text-lg font-semibold">2022 - current</h2>
                 <p>Lorem ipsum dolor sit amet.</p>
               </div>
               <div class="grid-item w-64 h-40">
-                <h2 class="text-lg font-semibold">Still Coming</h2>
+                <h2 class="text-lg font-semibold">2022 - current</h2>
                 <p>Lorem ipsum dolor sit amet.</p>
               </div>
             </div>
