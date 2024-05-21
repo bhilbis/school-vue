@@ -2,10 +2,13 @@
   <main class="flex flex-col items-center justify-center min-h-screen">
     <h1 class="text-3xl font-bold mb-4">{{ tulisan }}</h1>
     <h2 class="text-lg mb-2">Nama Programmer: {{ nama }}</h2>
+    
+    <div class="flex gap-2">
     <input type="text" name="nama" id="nama" v-model="inputNama" placeholder="Masukkan Nama" class="p-2 border border-gray-300 rounded-md mb-4">
-    <button @click="tampilkanNama" class="px-4 py-2 bg-blue-500 text-white rounded-md">Proses</button>
+    <button @click="tampilkanNama" class="px-4 h-10 bg-blue-950 text-white rounded-md">Proses</button>
+    </div>
 
-    <div class="mb-4">
+    <div class="mb-4 ">
       <label for="angka1" class="block mb-1">Angka 1</label>
       <input type="text" name="angka1" id="angka1" v-model="inputAngkaSatu" class="p-2 border border-gray-300 rounded-md">
     </div>
@@ -16,10 +19,10 @@
     </div>
 
     <div class="flex gap-2">
-    <button @click="proses" class="px-4 py-2 bg-blue-500 text-white rounded-md">Hitung Penjumlahan</button>
-    <button @click="proses1" class="px-4 py-2 bg-orange-300 text-white rounded-md">Hitung Pengurangan</button>
-    <button @click="proses2" class="px-4 py-2 bg-blue-500 text-white rounded-md">Hitung Perkalian</button>
-    <button @click="proses3" class="px-4 py-2 bg-orange-500 text-white rounded-md">Hitung Pembagian</button>
+    <button @click="proses" class="px-4 py-2 bg-blue-500 text-white rounded-md"> + </button>
+    <button @click="proses1" class="px-4 py-2 bg-orange-300 text-white rounded-md"> - </button>
+    <button @click="proses2" class="px-4 py-2 bg-blue-500 text-white rounded-md"> * </button>
+    <button @click="proses3" class="px-4 py-2 bg-orange-500 text-white rounded-md"> / </button>
     </div>
     
     <div class="border-2 mt-4 p-2 rounded">

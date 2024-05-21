@@ -1,14 +1,10 @@
 <template>
-    <div>
-      <header class="py-2 ">
-        
-      </header>
-  
-      <!-- About -->
-      <section id="about" class="py-4 mt-40 bg-gray-100">
+    <div class="flex items-center justify-center h-screen">
+    <!-- About -->
+      <section id="about" class="py-4 bg-gray-100">
         <div class="container mx-auto px-4">
           <h1 class="text-3xl font-bold text-center mb-4">About Me</h1>
-          <div class="container mx-auto px-4 flex justify-center">
+          <div class="container mx-auto px-4">
           <div class="header-text text-center">
             <p>Web Designer</p>
             <h1>Hi, I,m <span>Flexsy</span> Bilbis From Indonesia</h1>
@@ -50,58 +46,61 @@
             >Education</button>
           </div>
           <div v-if="activeTab === 'skills'" id="skills-panel" role="tabpanel" aria-labelledby="skills-tab" class="tab-content p-4">
-            <p class="mt-4">
-              Saya adalah siswa kelas 11 dari jurusan Rekayasa Perangkat Lunak yang memiliki komitmen dalam pengembangan teknologi website. Memiliki kemampuan dalam bidang Web Developer. Saya siap memberikan kontribusi dalam dunia teknologi informasi dengan pengetahuan dan keterampilan praktis yang dimiliki.
+            <p class="mt-4">    
+              Saya adalah siswa kelas 11 jurusan Rekayasa Perangkat Lunak dengan keahlian dalam pengembangan web. Berkomitmen untuk berkontribusi dalam teknologi informasi melalui pengetahuan dan keterampilan praktis yang saya miliki.
             </p>
   
             <!-- Tab Contents -->
-            <div class="grid grid-cols-3 gap-4 mt-8">
-              <div class="grid-item h-40">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              <div class="bg-gray-100 p-4 rounded shadow">
                 <h2 class="text-lg font-semibold">Web Developer</h2>
                 <p>Create a Website</p>
               </div>
-              <div class="grid-item h-40">
+              <div class="bg-gray-100 p-4 rounded shadow">
                 <h2 class="text-lg font-semibold">Web Design</h2>
                 <p>Designing Web Interface</p>
               </div>
-              <div class="grid-item h-40">
+              <div class="bg-gray-100 p-4 rounded shadow">
                 <h2 class="text-lg font-semibold">Mobile Developer</h2>
                 <p>Create a mobile app</p>
               </div>
             </div>
           </div>
+
           <div v-if="activeTab === 'experience'" id="experience-panel" role="tabpanel" aria-labelledby="experience-tab" class="tab-content p-4">
-            <div class="grid grid-cols-3 gap-4">
-              <div class="grid-item w-64 h-40">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              <div class="bg-gray-100 p-4 rounded shadow">
                 <h2 class="text-lg font-semibold">2022 - now</h2>
                 <p>SMK N 1 Purwosari</p>
               </div>
-              <div class="grid-item w-64 h-40">
+              <div class="bg-gray-100 p-4 rounded shadow">
                 <h2 class="text-lg font-semibold">2022 - current</h2>
                 <p>Lorem ipsum dolor sit amet.</p>
               </div>
-              <div class="grid-item w-64 h-40">
+              <div class="bg-gray-100 p-4 rounded shadow">
                 <h2 class="text-lg font-semibold">2022 - current</h2>
                 <p>Lorem ipsum dolor sit amet.</p>
               </div>
             </div>
           </div>
+
           <div v-if="activeTab === 'education'" id="education-panel" role="tabpanel" aria-labelledby="education-tab" class="tab-content p-4">
-            <div class="grid grid-cols-3 gap-4">
-              <div class="grid-item w-64 h-40">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              <div class="bg-gray-100 p-4 rounded shadow">
                 <h2 class="text-lg font-semibold">2022</h2>
                 <p>Create Website Training</p>
               </div>
-              <div class="grid-item w-64 h-40">
+              <div class="bg-gray-100 p-4 rounded shadow">
                 <h2 class="text-lg font-semibold">2022</h2>
                 <p>Design Website Training</p>
               </div>
-              <div class="grid-item w-64 h-40">
+              <div class="bg-gray-100 p-4 rounded shadow">
                 <h2 class="text-lg font-semibold">Coming</h2>
                 <p>hmm Still Coming broo</p>
               </div>
             </div>
           </div>
+
         </div>
       </section>
     </div>
