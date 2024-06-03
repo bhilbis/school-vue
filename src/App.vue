@@ -1,31 +1,28 @@
-<script setup>
-    import NavBar from './components/NavBar.vue';
-</script>
-
 <template>
-    <div>
-        <header>
-            <div class="wrapper">
-                <NavBar />
-            </div>
-        </header>
-        <main class="container mx-auto">
-            <RouterView />
-        </main>
+    <div class="flex flex-col min-h-screen overflow-hidden">
+      <header class="fixed top-0 left-0 right-0 w-full z-10">
+        <NavBar />
+      </header>
+      <main class="flex-grow flex items-center justify-center w-full mt-16">
+        <RouterView />
+      </main>
+      <footer class="w-full">
+        <FooTer />
+      </footer>
     </div>
-</template>
-
-<style scoped>
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-}
-.wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-</style>
+  </template>
+  
+  <script setup>
+  import NavBar from './components/NavBar.vue';
+  import FooTer from './components/FooTer.vue';
+  </script>
+  
+  <style>
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent scrolling */
+  }
+  </style>
+  

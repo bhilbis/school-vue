@@ -1,17 +1,29 @@
 <template>
-  <div class="flex flex-col container mx-auto px-4 py-5 items-center justify-center min-h-screen">
-    <h1 class="text-3xl font-bold mb-4">Selamat datang pada Halaman Home</h1>
-    <p class="text-lg mb-4">Ini adalah halaman utama dari aplikasi kami. Silakan jelajahi konten yang tersedia.</p>
-
-    <div class="flex items-center justify-center mt-8">
-      <router-link to="/about" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full">Tentang Kami</router-link>
-    </div>
+  <div class="flex flex-col items-center justify-center min-h-screen">
+    <main class="flex flex-col items-center justify-center text-center -mt-24">
+      <h1 class="text-5xl font-bold text-gray-900 mb-4">
+        Welcome to My Website
+      </h1>
+      <p class="text-lg text-gray-600 mb-8">
+        We offer amazing attractive designs to leave you totally amazed and attracted.
+      </p>
+      <div class="flex space-x-2">
+        <button class="px-6 py-3 bg-blue-600 text-white font-bold rounded-lg shadow-md hover:bg-blue-700">
+          Get Started
+        </button>
+        <button class="px-6 py-3 bg-gray-300 text-gray-800 font-bold rounded-lg shadow-md hover:bg-gray-400">
+          Learn More
+        </button>
+      </div>
+    </main>
   </div>
 </template>
 
-<script>
-
+<script setup>
 </script>
 
 <style scoped>
+body {
+  overflow: hidden;
+}
 </style>
